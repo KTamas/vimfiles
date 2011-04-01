@@ -1,16 +1,22 @@
+" pathogen
+call pathogen#runtime_append_all_bundles() 
+
 " set list
 set listchars=tab:▸\ ,eol:¬
-"
-" appearance options
-"
-set bg=dark
-let g:molokai_original = 0
-set t_Co=256
-colorscheme molokai
 
-"
+" appearance options
+set bg=dark
+set t_Co=256
+
+" solarized
+let g:solarized_termcolors=16
+colorscheme solarized
+
+" molokai
+" let g:molokai_original = 0
+" colorscheme molokai
+
 " misc settings
-"
 set clipboard+=unnamed  " Yanks go on clipboard instead.
 set showmatch " Show matching braces.
 
@@ -28,9 +34,7 @@ syntax on
 set lbr!
 set wrap
 
-"
 " tabs
-"
 set tabstop=2
 set shiftwidth=2
 set softtabstop=2
@@ -45,7 +49,5 @@ map <2-MiddleMouse> <Nop>
 imap <2-MiddleMouse> <Nop>
 
 imap jj <ESC>
-
-call pathogen#runtime_append_all_bundles() 
 
 nnoremap <F5> :GundoToggle<CR>
