@@ -28,7 +28,8 @@ set linebreak
 noremap j gj
 noremap k gk
 
-set relativenumber " relative line numbers; best vim feature EVER
+" set relativenumber " relative line numbers; best vim feature EVER
+set number " yeah, actually, they aren't.
 filetype plugin indent on
 syntax on
 set lbr!
