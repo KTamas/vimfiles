@@ -5,16 +5,16 @@ call pathogen#runtime_append_all_bundles()
 set listchars=tab:▸\ ,eol:¬
 
 " appearance options
-set bg=dark
+set bg=light
 set t_Co=256
 
 " solarized
-" let g:solarized_termcolors=16
-" colorscheme solarized
+let g:solarized_termcolors=16
+colorscheme solarized
 
 " molokai
-let g:molokai_original = 0
-colorscheme molokai
+" let g:molokai_original = 0
+" colorscheme molokai
 
 " misc settings
 set clipboard+=unnamed  " Yanks go on clipboard instead.
