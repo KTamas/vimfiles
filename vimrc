@@ -53,3 +53,6 @@ imap <2-MiddleMouse> <Nop>
 imap jj <ESC>
 
 nnoremap <F5> :GundoToggle<CR>
+
+" swap
+set dir=~/.vimswap//,/var/tmp//,/tmp//,.
