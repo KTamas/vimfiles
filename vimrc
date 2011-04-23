@@ -56,3 +56,6 @@ nnoremap <F5> :GundoToggle<CR>
 
 " swap
 set dir=~/.vimswap//,/var/tmp//,/tmp//,.
+
+" hl
+nnoremap <esc> :noh<return><esc>
