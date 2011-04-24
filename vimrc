@@ -12,10 +12,6 @@ set t_Co=256
 let g:solarized_termcolors=16
 colorscheme solarized
 
-" molokai
-" let g:molokai_original = 0
-" colorscheme molokai
-
 " misc settings
 set clipboard+=unnamed  " Yanks go on clipboard instead.
 set showmatch " Show matching braces.
@@ -28,8 +24,7 @@ set linebreak
 noremap j gj
 noremap k gk
 
-" set relativenumber " relative line numbers; best vim feature EVER
-set number " yeah, actually, they aren't.
+set number
 filetype plugin indent on
 syntax on
 set lbr!
@@ -57,5 +52,5 @@ nnoremap <F5> :GundoToggle<CR>
 " swap
 set dir=~/.vimswap//,/var/tmp//,/tmp//,.
 
-" hl
+" clear search highlight
 nnoremap <esc> :noh<return><esc>
