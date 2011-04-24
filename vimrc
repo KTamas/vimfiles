@@ -58,3 +58,15 @@ set dir=~/.vimswap//,/var/tmp//,/tmp//,.
 " nnoremap <esc> :noh<return><esc>
 " nnoremap <CR> :noh<CR><CR>
 " gah 
+
+inoremap <F1> <ESC>
+nnoremap <F1> <ESC>
+vnoremap <F1> <ESC>
+
+
+" windows
+nnoremap <leader>w <C-w>v<C-w>l
+nnoremap <C-h> <C-w>h
+nnoremap <C-j> <C-w>j
+nnoremap <C-k> <C-w>k
+nnoremap <C-l> <C-w>l
