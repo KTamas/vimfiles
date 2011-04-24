@@ -56,4 +56,5 @@ set dir=~/.vimswap//,/var/tmp//,/tmp//,.
 
 " clear search highlight
 " nnoremap <esc> :noh<return><esc>
-nnoremap <CR> :noh<CR><CR>
+" nnoremap <CR> :noh<CR><CR>
+" gah 
