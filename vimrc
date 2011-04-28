@@ -25,6 +25,8 @@ set linebreak
 " Windows like movements for long lines with wrap enabled:
 noremap j gj
 noremap k gk
+nnoremap <up> gk
+nnoremap <down> gj
 
 set number
 filetype plugin indent on
@@ -70,3 +72,5 @@ nnoremap <C-h> <C-w>h
 nnoremap <C-j> <C-w>j
 nnoremap <C-k> <C-w>k
 nnoremap <C-l> <C-w>l
+
+au FocusLost * :wa
