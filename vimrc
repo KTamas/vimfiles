@@ -1,7 +1,12 @@
+" pathogen
+filetype off
+call pathogen#runtime_append_all_bundles() 
+filetype plugin indent on
+
 " !!!
 set nocompatible
-" pathogen
-call pathogen#runtime_append_all_bundles() 
+
+set modelines=0
 
 " set list
 set listchars=tab:▸\ ,eol:¬
@@ -55,6 +60,10 @@ nnoremap <F5> :GundoToggle<CR>
 
 " swap
 set dir=~/.vimswap//,/var/tmp//,/tmp//,.
+
+" undo
+set undofile
+set undodir=~/.vimundo//,/var/tmp//,/tmp//,.
 
 " clear search highlight
 " nnoremap <esc> :noh<return><esc>
