@@ -5,7 +5,6 @@ filetype plugin indent on
 
 " !!!
 set nocompatible
-
 set modelines=0
 
 " set list
@@ -65,15 +64,9 @@ set dir=~/.vimswap//,/var/tmp//,/tmp//,.
 set undofile
 set undodir=~/.vimundo//,/var/tmp//,/tmp//,.
 
-" clear search highlight
-" nnoremap <esc> :noh<return><esc>
-" nnoremap <CR> :noh<CR><CR>
-" gah 
-
 inoremap <F1> <ESC>
 nnoremap <F1> <ESC>
 vnoremap <F1> <ESC>
-
 
 " windows
 nnoremap <leader>w <C-w>v<C-w>l
