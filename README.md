@@ -2,6 +2,7 @@ My vim config
 =============
 
 Bundles w/pathogen:
+
 *   command-t
 *   fugitive
 *   gitv
@@ -13,5 +14,7 @@ Bundles w/pathogen:
 *   vim-json
 *   vim-markdown
 
+
 Stuff w/o pathogen:
+
 *   sparkup
