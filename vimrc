@@ -76,3 +76,4 @@ nnoremap <C-k> <C-w>k
 nnoremap <C-l> <C-w>l
 
 au FocusLost * :wa
+vmap <leader>j :CoffeeCompile<CR>
