@@ -7,7 +7,6 @@ Bundles w/pathogen:
 *   fugitive
 *   gitv
 *   gundo
-*   jslint
 *   nerdcommenter
 *   solarized
 *   vim-coffee-script
@@ -17,7 +16,7 @@ Bundles w/pathogen:
 
 Stuff w/o pathogen:
 
-*   sparkup
+*   sparkup (aka zencoding)
 
 Important
 ---------

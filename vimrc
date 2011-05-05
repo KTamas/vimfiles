@@ -20,7 +20,7 @@ colorscheme solarized
 
 " misc settings
 set clipboard+=unnamed  " Yanks go on clipboard instead.
-set showmatch " Show matching braces.
+" set showmatch " Show matching braces.
 
 " Line wrapping on by default
 set wrap
