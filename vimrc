@@ -1,61 +1,67 @@
-" pathogen
+""""""""""""
+" pathogen "
+""""""""""""
+
 filetype off
 call pathogen#runtime_append_all_bundles() 
 filetype plugin indent on
+ 
+""""""""""""
+" behavior "
+""""""""""""
 
-" !!!
 set nocompatible
 set modelines=0
+set encoding=utf-8
+set autoindent
+set mouse=a
+set bs=indent,eol,start "backspace over everything
+set autoread "auto-read modified files
+
+autocmd! bufwritepost vimrc source ~/.vim/vimrc
+
+""""""""""
+" search "
+""""""""""
+
+set hlsearch
+set ignorecase
+set smartcase
+set gdefault
+set incsearch
+set showmatch
+nnoremap <leader><space> :noh<cr>
+
+""""""""""""""
+" appearance "
+""""""""""""""
+
+syntax on
+set bg=light
+set t_Co=256
+let g:solarized_termcolors=16
+colorscheme solarized
+
+set wrap
+set linebreak
+set ruler
+set number
+set showmode
+set showcmd
+set wildmenu
+set wildmode=list:longest
 
 " set list
 set listchars=tab:▸\ ,eol:¬
 
-" appearance options
-set bg=light
-set t_Co=256
-
-" solarized
-let g:solarized_termcolors=16
-colorscheme solarized
-
 " misc settings
 set clipboard+=unnamed  " Yanks go on clipboard instead.
-" set showmatch " Show matching braces.
-
-" Line wrapping on by default
-set wrap
-set linebreak
-
-" Windows like movements for long lines with wrap enabled:
-noremap j gj
-noremap k gk
-nnoremap <up> gk
-nnoremap <down> gj
-
-set number
-filetype plugin indent on
-syntax on
-set lbr!
-set wrap
 
 " tabs
 set tabstop=2
 set shiftwidth=2
 set softtabstop=2
 set expandtab
-set hlsearch
-set mouse=a
-set bs=indent,eol,start
-
-" middleclick (scroll area-ra taposás) paste kiölése: 
-map <MiddleMouse> <Nop>
-imap <MiddleMouse> <Nop>
-map <2-MiddleMouse> <Nop>
-imap <2-MiddleMouse> <Nop>
-
-imap jj <ESC>
-
-nnoremap <F5> :GundoToggle<CR>
 
 " swap
 set dir=~/.vimswap//,/var/tmp//,/tmp//,.
@@ -64,6 +70,29 @@ set dir=~/.vimswap//,/var/tmp//,/tmp//,.
 set undofile
 set undodir=~/.vimundo//,/var/tmp//,/tmp//,.
 
+au FocusLost * :wa
+
+""""""""""
+" Remaps "
+""""""""""
+
+" kill middle-click
+map <MiddleMouse> <Nop>
+imap <MiddleMouse> <Nop>
+map <2-MiddleMouse> <Nop>
+imap <2-MiddleMouse> <Nop>
+
+" might get used to it
+imap jj <ESC>
+
+let mapleader = ","
+
+nnoremap <leader>u :GundoToggle<CR>
+nnoremap <leader>m :CoffeeMake<CR>
+nnoremap <leader>p :NERDTreeToggle<CR>
+vmap <leader>j :CoffeeCompile<CR>
+
+" kill that pesky F1
 inoremap <F1> <ESC>
 nnoremap <F1> <ESC>
 vnoremap <F1> <ESC>
@@ -75,5 +104,22 @@ nnoremap <C-j> <C-w>j
 nnoremap <C-k> <C-w>k
 nnoremap <C-l> <C-w>l
 
-au FocusLost * :wa
-vmap <leader>j :CoffeeCompile<CR>
+" Windows like movements for long lines with wrap enabled:
+noremap j gj
+noremap k gk
+nnoremap <up> gk
+nnoremap <down> gj
+
+" use tab to move around matching brackets
+nnoremap <tab> %
+vnoremap <tab> %
+
+" okay, let's give this a try
+nnoremap <up> <nop>
+nnoremap <down> <nop>
+nnoremap <left> <nop>
+nnoremap <right> <nop>
+inoremap <up> <nop>
+inoremap <down> <nop>
+inoremap <left> <nop>
+inoremap <right> <nop>

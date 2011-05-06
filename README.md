@@ -8,6 +8,7 @@ Bundles w/pathogen:
 *   gitv
 *   gundo
 *   nerdcommenter
+*   nerdtree
 *   solarized
 *   vim-coffee-script
 *   vim-json
