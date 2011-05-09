@@ -123,3 +123,7 @@ inoremap <up> <nop>
 inoremap <down> <nop>
 inoremap <left> <nop>
 inoremap <right> <nop>
+
+" indenting in visual mode reselects after indentation
+vmap <leader>< <gv
+vmap <leader>> >gv
