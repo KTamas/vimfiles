@@ -34,3 +34,6 @@
 [submodule "bundle/vividchalk"]
 	path = bundle/vividchalk
 	url = https://github.com/tpope/vim-vividchalk.git
+[submodule "bundle/sparkup"]
+	path = bundle/sparkup
+	url = https://github.com/kogakure/vim-sparkup
