@@ -7,17 +7,16 @@ Bundles w/pathogen:
 *   fugitive
 *   gitv
 *   gundo
+*   mustache
 *   nerdcommenter
 *   nerdtree
 *   solarized
+*   sparkup
+*   supertab
 *   vim-coffee-script
 *   vim-json
 *   vim-markdown
-
-
-Stuff w/o pathogen:
-
-*   sparkup (aka zencoding)
+*   vividchalk
 
 Important
 ---------
