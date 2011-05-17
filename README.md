@@ -10,6 +10,7 @@ Bundles w/pathogen:
 *   mustache
 *   nerdcommenter
 *   nerdtree
+*   slime
 *   solarized
 *   sparkup
 *   supertab
