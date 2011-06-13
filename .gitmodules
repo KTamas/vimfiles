@@ -30,7 +30,7 @@
 	url = https://github.com/scrooloose/nerdtree
 [submodule "bundle/mustache"]
 	path = bundle/mustache
-	url = git@github.com:KTamas/mustache.vim.git
+	url = https://github.com/juvenn/mustache.vim.git
 [submodule "bundle/vividchalk"]
 	path = bundle/vividchalk
 	url = https://github.com/tpope/vim-vividchalk.git
