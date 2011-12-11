@@ -128,3 +128,4 @@ inoremap <right> <nop>
 " indenting in visual mode reselects after indentation
 vmap <leader>< <gv
 vmap <leader>> >gv
+
