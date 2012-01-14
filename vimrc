@@ -4,6 +4,7 @@
 
 filetype off
 call pathogen#infect()
+call pathogen#helptags()
 syntax on
 filetype plugin indent on
  
@@ -11,6 +12,7 @@ filetype plugin indent on
 " behavior "
 """"""""""""
 
+set laststatus=2
 set nocompatible
 set modelines=0
 set encoding=utf-8
@@ -129,3 +131,4 @@ inoremap <right> <nop>
 vmap <leader>< <gv
 vmap <leader>> >gv
 
+let g:Powerline_symbols = 'fancy'

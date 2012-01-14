@@ -1,3 +1,3 @@
 " gui font
-set gfn=Monaco:h14
+set guifont=MyFont\ for\ Powerline:h14
 set guioptions-=T
