@@ -20,6 +20,8 @@ set autoindent
 set mouse=a
 set bs=indent,eol,start "backspace over everything
 set autoread "auto-read modified files
+set hidden 
+set title
 
 autocmd! bufwritepost vimrc source ~/.vim/vimrc
 
