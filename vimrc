@@ -94,7 +94,6 @@ let mapleader = ","
 
 nnoremap <leader>u :GundoToggle<CR>
 nnoremap <leader>m :CoffeeMake<CR>
-nnoremap <leader>p :NERDTreeToggle<CR>
 vmap <leader>j :CoffeeCompile<CR>
 
 " kill that pesky F1
