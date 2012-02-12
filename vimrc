@@ -35,7 +35,6 @@ set smartcase
 set gdefault
 set incsearch
 set showmatch
-nnoremap <leader><space> :noh<cr>
 
 """"""""""""""
 " appearance "
@@ -94,6 +93,7 @@ let mapleader = ","
 
 nnoremap <leader>u :GundoToggle<CR>
 nnoremap <leader>m :CoffeeMake<CR>
+nnoremap <leader><space> :noh<CR>
 vmap <leader>j :CoffeeCompile<CR>
 
 " kill that pesky F1
