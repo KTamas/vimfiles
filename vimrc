@@ -133,3 +133,4 @@ vmap <leader>< <gv
 vmap <leader>> >gv
 
 let g:Powerline_symbols = 'fancy'
+let g:slime_target = 'screen'
