@@ -23,6 +23,8 @@ set autoread "auto-read modified files
 set hidden 
 set title
 
+autocmd! bufwritepost vimrc source ~/.vim/vimrc
+
 """"""""""
 " search "
 """"""""""
@@ -72,7 +74,8 @@ set dir=~/.vimswap//,/var/tmp//,/tmp//,.
 set undofile
 set undodir=~/.vimundo//,/var/tmp//,/tmp//,.
 
-au FocusLost * :wa
+" backupcopy
+set backupcopy=yes
 
 """"""""""
 " Remaps "
