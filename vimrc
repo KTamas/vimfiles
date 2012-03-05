@@ -23,8 +23,6 @@ set autoread "auto-read modified files
 set hidden 
 set title
 
-autocmd! bufwritepost vimrc source ~/.vim/vimrc
-
 """"""""""
 " search "
 """"""""""
