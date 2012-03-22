@@ -46,3 +46,9 @@
 [submodule "bundle/vim-markdown"]
 	path = bundle/vim-markdown
 	url = https://github.com/tpope/vim-markdown.git
+[submodule "bundle/vim-less"]
+	path = bundle/vim-less
+	url = https://github.com/groenewege/vim-less.git
+[submodule "bundle/vim-less-autocompile"]
+	path = bundle/vim-less-autocompile
+	url = https://github.com/plasticscafe/vim-less-autocompile.git
