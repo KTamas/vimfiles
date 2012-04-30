@@ -134,7 +134,7 @@ vmap <leader>< <gv
 vmap <leader>> >gv
 
 let g:Powerline_symbols = 'fancy'
-let g:slime_target = 'screen'
+let g:slime_target = 'tmux'
 
 au! BufRead,BufNewFile *.less set filetype=less
 let g:less_autocompile=0
