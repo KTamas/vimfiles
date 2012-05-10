@@ -55,8 +55,8 @@ set showcmd
 set wildmenu
 set wildmode=list:longest
 
-" set list
-set listchars=tab:▸\ ,eol:¬
+"set list
+set listchars=trail:·,tab:▸\ ,eol:¬
 
 " misc settings
 set clipboard+=unnamed  " Yanks go on clipboard instead.
@@ -75,7 +75,7 @@ set undofile
 set undodir=~/.vimundo//,/var/tmp//,/tmp//,.
 
 " backupcopy
-set backupcopy=yes
+"set backupcopy=yes
 
 """"""""""
 " Remaps "
