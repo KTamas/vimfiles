@@ -52,6 +52,3 @@
 [submodule "bundle/vim-less-autocompile"]
 	path = bundle/vim-less-autocompile
 	url = https://github.com/plasticscafe/vim-less-autocompile.git
-[submodule "bundle/vim-yaml-flattener"]
-	path = bundle/vim-yaml-flattener
-	url = https://github.com/henrik/vim-yaml-flattener.git
