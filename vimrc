@@ -139,3 +139,4 @@ let g:slime_target = 'tmux'
 au! BufRead,BufNewFile *.less set filetype=less
 let g:less_autocompile=0
 let g:less_compress=0
+set gcr=a:blinkon0
