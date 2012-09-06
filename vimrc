@@ -87,9 +87,6 @@ imap <MiddleMouse> <Nop>
 map <2-MiddleMouse> <Nop>
 imap <2-MiddleMouse> <Nop>
 
-" might get used to it
-imap jj <ESC>
-
 let mapleader = ","
 
 nnoremap <leader>u :GundoToggle<CR>
