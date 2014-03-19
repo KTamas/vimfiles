@@ -27,7 +27,7 @@
 	url = https://github.com/pangloss/vim-javascript.git
 [submodule "bundle/vim-bundler"]
 	path = bundle/vim-bundler
-	url = git://github.com/tpope/vim-bundler.git
+	url = https://github.com/tpope/vim-bundler.git
 [submodule "bundle/vim-rails"]
 	path = bundle/vim-rails
 	url = https://github.com/tpope/vim-rails.git
@@ -42,10 +42,10 @@
 	url = https://github.com/groenewege/vim-less.git
 [submodule "bundle/vim-fugitive"]
 	path = bundle/vim-fugitive
-	url = git://github.com/tpope/vim-fugitive.git
+	url = https://github.com/tpope/vim-fugitive.git
 [submodule "bundle/jslint.vim"]
 	path = bundle/jslint.vim
-	url = git://github.com/hallettj/jslint.vim.git
+	url = https://github.com/hallettj/jslint.vim.git
 [submodule "bundle/gitgutter"]
 	path = bundle/gitgutter
 	url = https://github.com/airblade/vim-gitgutter.git
