@@ -7,9 +7,6 @@
 [submodule "bundle/solarized"]
 	path = bundle/solarized
 	url = https://github.com/altercation/vim-colors-solarized.git
-[submodule "bundle/vim-coffee-script"]
-	path = bundle/vim-coffee-script
-	url = https://github.com/kchmck/vim-coffee-script.git
 [submodule "bundle/vim-json"]
 	path = bundle/vim-json
 	url = https://github.com/leshill/vim-json.git
@@ -43,9 +40,9 @@
 [submodule "bundle/vim-fugitive"]
 	path = bundle/vim-fugitive
 	url = https://github.com/tpope/vim-fugitive.git
-[submodule "bundle/jslint.vim"]
-	path = bundle/jslint.vim
-	url = https://github.com/hallettj/jslint.vim.git
 [submodule "bundle/gitgutter"]
 	path = bundle/gitgutter
 	url = https://github.com/airblade/vim-gitgutter.git
+[submodule "bundle/jshint2.vim"]
+	path = bundle/jshint2.vim
+	url = https://github.com/Shutnik/jshint2.vim.git
