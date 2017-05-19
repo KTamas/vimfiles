@@ -140,3 +140,6 @@ set gcr=a:blinkon0
 
 let g:gitgutter_realtime = 0
 let g:gitgutter_eager = 0
+
+let g:javascript_plugin_flow = 1
+let g:jsx_ext_required = 0
