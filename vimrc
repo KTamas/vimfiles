@@ -92,7 +92,7 @@ let mapleader = ","
 nnoremap <leader>u :GundoToggle<CR>
 nnoremap <leader>m :CoffeeMake<CR>
 nnoremap <leader><space> :noh<CR>
-vmap <leader>j :CoffeeCompile<CR>
+"vmap <leader>j :CoffeeCompile<CR>
 
 " kill that pesky F1
 inoremap <F1> <ESC>
@@ -117,14 +117,14 @@ nnoremap <tab> %
 vnoremap <tab> %
 
 " okay, let's give this a try
-nnoremap <up> <nop>
-nnoremap <down> <nop>
-nnoremap <left> <nop>
-nnoremap <right> <nop>
-inoremap <up> <nop>
-inoremap <down> <nop>
-inoremap <left> <nop>
-inoremap <right> <nop>
+"nnoremap <up> <nop>
+"nnoremap <down> <nop>
+"nnoremap <left> <nop>
+"nnoremap <right> <nop>
+"inoremap <up> <nop>
+"inoremap <down> <nop>
+"inoremap <left> <nop>
+"inoremap <right> <nop>
 
 " indenting in visual mode reselects after indentation
 vmap <leader>< <gv
@@ -143,3 +143,13 @@ let g:gitgutter_eager = 0
 
 let g:javascript_plugin_flow = 1
 let g:jsx_ext_required = 0
+
+" new stuff
+map <C-n> :NERDTreeToggle<CR>
+autocmd StdinReadPre * let s:std_in=1
+autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
+autocmd VimEnter * if argc() == 1 && isdirectory(argv()[0]) && !exists("s:std_in") | exe 'NERDTree' argv()[0] | wincmd p | ene | endif
+autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
+
+set rtp+=/usr/local/opt/fzf
+nnoremap <C-r> :FZF<CR>
