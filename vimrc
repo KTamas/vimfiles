@@ -3,8 +3,6 @@
 """"""""""""
 
 filetype off
-call pathogen#infect()
-call pathogen#helptags()
 syntax on
 filetype plugin indent on
  
@@ -42,8 +40,6 @@ set showmatch
 
 syntax on
 set bg=light
-set t_Co=256
-let g:solarized_termcolors=16
 colorscheme solarized
 
 set wrap
@@ -129,27 +125,3 @@ vnoremap <tab> %
 " indenting in visual mode reselects after indentation
 vmap <leader>< <gv
 vmap <leader>> >gv
-
-let g:Powerline_symbols = 'fancy'
-let g:slime_target = 'tmux'
-
-au! BufRead,BufNewFile *.less set filetype=less
-let g:less_autocompile=0
-let g:less_compress=0
-set gcr=a:blinkon0
-
-let g:gitgutter_realtime = 0
-let g:gitgutter_eager = 0
-
-let g:javascript_plugin_flow = 1
-let g:jsx_ext_required = 0
-
-" new stuff
-map <C-n> :NERDTreeToggle<CR>
-autocmd StdinReadPre * let s:std_in=1
-autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
-autocmd VimEnter * if argc() == 1 && isdirectory(argv()[0]) && !exists("s:std_in") | exe 'NERDTree' argv()[0] | wincmd p | ene | endif
-autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
-
-set rtp+=/usr/local/opt/fzf
-nnoremap <C-r> :FZF<CR>
